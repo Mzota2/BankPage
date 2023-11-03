@@ -24,7 +24,7 @@ body{
     padding: 0;
     display: flex;
     flex-direction: column;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 
 }
 
@@ -133,6 +133,7 @@ li{
     top: 0;
     position: absolute;
     right: -100px;
+    max-width: 60%;
 
 
 }
@@ -153,19 +154,18 @@ li{
     body{
         position: relative;
     }
+    main, .navBar{
+        margin: 0;
+        width: 100%;
+    }
     .container-1 {
         display: flex;
         flex-direction: column;
         justify-content: center;
-
     }
-    main{
-        margin: 0;
-        width: 100%;
-    }
+    
     .close-icon{
         display: block;
-        margin-right: 1em;
         display: block;
         cursor: pointer;
     }
@@ -191,8 +191,8 @@ li{
         position: absolute;
         min-height: 200px;
         padding: 2em 0;
-        max-width: 90%;
-        min-width: 400px;
+        max-width: 400px;
+        min-width: 100%;
         border-radius: 10px;
         flex-direction: column;
         gap: 1.5em;
@@ -213,7 +213,6 @@ li{
         display: none;
     }
     .menu-icon{
-        margin-right: 1em;
         display: block;
         cursor: pointer;
     }
@@ -262,9 +261,6 @@ li{
         order: 1;
     }
    
-    
-
-
 }
 
 
@@ -497,21 +493,15 @@ footer{
 
  /* MEDIA QUERY */
  @media screen and (max-width:900px){
-    .request-invite-btn{
-        height: 35px;
-        width: 120px;
-        font-size: 0.8rem;
-    }
-    .navBar {
-        margin-left: 10%;
-        width: 90%;
-        justify-content: space-between;
-    }
+ 
 
+    .navBar {
+        width: 97%;
+        justify-content: space-between; 
+    }
 
     .menu-option-container{
         width: 60%;
-        min-width: 300px;
         gap: 1em;
     }
 
@@ -551,6 +541,11 @@ footer{
  }
 
  @media screen and (max-width:675px){
+
+    header{
+        justify-content: center;
+    }
+
     .footer-container{
         padding: 2em 0;
         margin: 0;
@@ -593,6 +588,8 @@ footer{
     footer li{
         margin: 0;
     }
+
+
 }
 
 
