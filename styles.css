@@ -146,7 +146,9 @@ li{
 .mobile-menu-overylay{
     display: none;
 }
-
+.mobile-menu-option-container{
+    display: none;
+}
 @media screen and (max-width:675px){
     body{
         position: relative;
